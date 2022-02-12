@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixins";
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $main-font;
+  font-size: 16px;
+  background: $bg-color url('../media/bg-pattern.png');
+  color: white;
+}

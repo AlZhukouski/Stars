@@ -1,0 +1,17 @@
+@mixin container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+// Миксин задания градиента тексту
+@mixin text-gradient($gradient) {
+  background-image: $gradient; /* Standard syntax; must be last */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}

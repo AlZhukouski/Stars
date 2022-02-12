@@ -1,0 +1,21 @@
+@import "../common/variables";
+@import "../common/mixins";
+
+.nav {
+  display: flex;
+  max-width: 790px;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.nav__item {
+  font-size: 18px;
+  color: $link-color;
+  transition: 0.3s;
+  text-decoration: unset;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}

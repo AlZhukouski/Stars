@@ -1,0 +1,15 @@
+@import "../common/variables";
+@import "../common/mixins";
+
+.page {
+  display: block;
+}
+
+.page__container {
+  @include container;
+}
+
+.page__full-screen {
+  min-height: 800px;
+  height: 100vh;
+}

@@ -1,0 +1,11 @@
+{%- block nav -%}
+
+<nav class="nav" role="navigation">
+  {% for item in menus.primary %}
+  <a class="nav__item" href="{{ paths.root + item.path }}">
+    {{ item.children | safe }}
+  </a>
+  {% endfor %}
+</nav><!-- /nav -->
+
+{%- endblock -%}

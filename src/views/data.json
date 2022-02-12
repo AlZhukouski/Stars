@@ -1,0 +1,42 @@
+{
+  "site": {
+    "title": "(site title)",
+    "description": "(site meta description)"
+  },
+  "pages": {
+    "index": {
+      "title": "",
+      "description": "",
+      "stylesheets": ["main"],
+      "scripts": ["main"]
+    }
+  },
+  "menus": {
+    "primary": [
+      {
+        "path": "/",
+        "children": "Преимущества"
+      },
+      {
+        "path": "/",
+        "children": "О проекте"
+      },
+      {
+        "path": "/",
+        "children": "Отзывы"
+      },
+      {
+        "path": "/",
+        "children": "Roadmap"
+      },
+      {
+        "path": "/",
+        "children": "Лицензия"
+      },
+      {
+        "path": "/",
+        "children": "Контакты"
+      }
+    ]
+  }
+}

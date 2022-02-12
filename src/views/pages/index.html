@@ -1,0 +1,29 @@
+{% extends 'layouts/default.html' %}
+
+{% block content %}
+
+<div class="parallax__group">
+  <div class="parallax__layer parallax__layer--base">
+    <div class="page__container page__full-screen">
+
+      {% include 'partials/header.html' %}
+
+      <div class="banner">
+aSDasdasdsa
+      </div>
+    </div>
+  </div>
+  <div class="parallax__layer parallax__layer--back">
+    <div class="title">Background Layer</div>
+  </div>
+</div>
+
+<div class="parallax__group">
+  <div class="parallax__layer parallax__layer--base">
+    <div class="page__container">
+      {% include 'partials/footer.html' %}
+    </div>
+  </div>
+</div>
+
+{% endblock %}
