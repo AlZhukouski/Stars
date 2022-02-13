@@ -1,0 +1,174 @@
+@import "../common/variables";
+@import "../common/mixins";
+
+.reviews {
+  display: block;
+  margin-bottom: 555px;
+}
+
+.reviews__title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 200px;
+}
+
+.reviews__sliders-wrap {
+  position: relative;
+}
+
+.reviews__slider-item {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 188px;
+  height: 400px;
+  padding: 55px 15px 41px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../media/screen.svg");
+}
+
+.reviews__slider-item-text {
+  flex-grow: 1;
+  font-size: 14px;
+  line-height: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 15;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  max-height: 240px;
+  overflow: hidden;
+  color: #B5C9EB;
+  margin-bottom: 18px;
+}
+
+.reviews__slider-item-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.reviews__slider-item-avatar {
+  margin-right: 7px;
+  width: 39px;
+  height: 39px;
+}
+
+.reviews__slider-item-name {
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+
+.reviews__phone-slide-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.reviews__phone-slide {
+  width: 284px;
+  height: 604px;
+  padding: 130px 16px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__phone-slide-stars {
+  height: 14px;
+  width: auto;
+  margin-bottom: 24px;
+  align-self: flex-start;
+}
+
+.reviews__phone-slide-text {
+  flex-grow: 1;
+  font-size: 15px;
+  line-height: 21px;
+  display: -webkit-box;
+  -webkit-line-clamp: 12;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  max-height: 252px;
+  overflow: hidden;
+  color: #D8E6FF;
+  margin-bottom: 8px;
+}
+
+.reviews__phone-slide-date {
+  color: rgba(216, 230, 255, 0.5);
+  font-size: 14px;
+  margin-bottom: 72px;
+}
+
+.reviews__phone-slide-avatar {
+  margin-right: 7px;
+  width: 59px;
+  height: 59px;
+}
+
+.reviews__phone-slider {
+  width: 284px;
+  height: 604px;
+}
+
+.reviews__phone-slide-name {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.reviews__phone-slider-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 65px));
+}
+
+.reviews__phone-slider-image {
+  position: absolute;
+  left: -124px;
+  top: 0;
+}
+
+.reviews__phone-slider-btn-wrap {
+  position: absolute;
+  left: 50%;
+  top:  calc(50% + 50px);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 550px;
+}
+
+.reviews__phone-slider-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 57px;
+  height: 57px;
+  background: linear-gradient(180deg, #E2FFF5 0%, #97FFE3 100%);
+  box-shadow: 0 0 22px 15px rgba(160, 255, 229, 0.20);
+  border-radius: 50%;
+  border: unset;
+  outline: unset !important;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &--right {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    box-shadow: 0 0 22px 18px rgba(160, 255, 229, 0.25);
+  }
+}
+
+.reviews__phone-slider-btn-arrow {
+  margin-right: 3px;
+  transition: 0.2s ease-in-out;
+
+  @at-root .reviews__phone-slider-btn:hover #{&} {
+    transform: translateX(-2px);
+  }
+}

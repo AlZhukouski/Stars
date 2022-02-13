@@ -104,10 +104,10 @@ const pluginConfig = {
       isProd,
       version: packageJson.version,
       paths: {
-        root: isProd ? "https://example.com" : "",
-        scripts: "/static/scripts",
-        styles: "/static/styles",
-        media: "/static/media",
+        root: isProd ? "" : "",
+        scripts: "static/scripts",
+        styles: "static/styles",
+        media: "static/media",
       },
     },
     envOptions: {
@@ -284,7 +284,7 @@ const scripts = function () {
       // Automatically pass named chunks to webpack.
       .pipe(named())
       // Bundle.
-      .pipe(webpack(pluginConfig.webpack))
+      // .pipe(webpack(pluginConfig.webpack))
       // Output.
       .pipe(dest(paths.scripts.dest))
   );

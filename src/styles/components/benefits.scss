@@ -1,0 +1,91 @@
+@import "../common/variables";
+@import "../common/mixins";
+
+.benefits {
+  display: block;
+}
+
+.benefits__title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 200px;
+}
+
+.benefits__flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -90px;
+  margin-bottom: 120px;
+}
+
+.benefits__item {
+  margin-left: 90px;
+  width: calc(33% - 90px);
+  margin-bottom: 80px;
+}
+
+.benefits__icon-wrap {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #5B586D;
+  margin-bottom: 20px;
+}
+
+.benefits__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.benefits__item-title {
+  margin-top: unset;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.benefits__item-subtitle {
+  margin-top: unset;
+  font-size: 18px;
+  color: #B5C9EB;
+  line-height: 1.3;
+}
+
+.benefits__statistics {
+  display: flex;
+  margin-left: -20px;
+}
+
+.benefits__statistic {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 35px 45px;
+  border-radius: 16px;
+  background-color: #03061A;
+  margin-left: 20px;
+
+  &--small {
+    flex-grow: 0.8;
+  }
+}
+
+.benefits__statistic-count {
+  @include text-gradient(radial-gradient(61.08% 217.83% at 44.64% -55.2%, #FFE600 0%, #CD69EA 48.88%, #1070FF 100%));
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: unset;
+  margin-bottom: 22px;
+}
+
+.benefits__statistic-title {
+  font-size: 25px;
+  margin: unset;
+}

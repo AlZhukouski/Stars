@@ -10,7 +10,6 @@
 
 .parallax__group {
   position: relative;
-  height: 100vh;
   transform-style: preserve-3d;
 }
 
@@ -27,5 +26,13 @@
 }
 
 .parallax__layer--back {
-  transform: translateZ(-1px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateZ(-0.65px) scale(3);
 }

@@ -2,5 +2,61 @@
 @import "../common/mixins";
 
 .banner {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 157px;
+}
+
+.banner__title {
   display: block;
+}
+
+.banner__subtitle {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #AFC2FF;
+  text-align: center;
+  max-width: 410px;
+  line-height: 1.8;
+  margin-top: 56px;
+  margin-bottom: 126px;
+}
+
+.banner__btn-wrap {
+  display: flex;
+  width: 100%;
+  max-width: 542px;
+  justify-content: space-between;
+}
+
+.banner__btn {
+  text-decoration: unset;
+  width: 100%;
+  max-width: 256px;
+  min-height: 60px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 30px;
+
+  &--log-in {
+    font-size: 18px;
+    font-weight: bold;
+    background: radial-gradient(114.65% 620.83% at 100% 254.17%, #FFE600 0%, #CD69EA 36.55%, #1048FF 100%);
+  }
+
+  &--watch-video {
+    border: 1px solid #6A707F;
+
+    img {
+      margin-left: 12px;
+      margin-top: 1px;
+    }
+  }
 }

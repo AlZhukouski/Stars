@@ -12,4 +12,6 @@
 .page__full-screen {
   min-height: 800px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

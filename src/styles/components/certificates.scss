@@ -1,0 +1,61 @@
+@import "../common/variables";
+@import "../common/mixins";
+
+.certificates {
+  display: block;
+  margin-bottom: 290px;
+}
+
+.certificates__title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  margin-top: unset;
+  text-transform: uppercase;
+}
+
+.certificates__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificates__wrap {
+  max-width: 280px;
+  margin-left: 70px;
+}
+
+.certificates__text {
+  margin-top: unset;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.certificates__btn {
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: unset;
+  color: white;
+  width: 256px;
+  height: 48px;
+  margin-bottom: 35px;
+
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../media/certificates-btn-border.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+  }
+}

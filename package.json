@@ -1,41 +1,21 @@
 {
-  "name": "gulp-nunjucks-boilerplate",
-  "version": "3.0.0",
-  "description": "A scalable Gulp generated Nunjucks boilerplate.",
-  "license": "MIT",
-  "author": "Michael Schwobe <mschwobe@gmail.com> (http://michaelschwobe.com)",
-  "repository": "michaelschwobe/gulp-nunjucks-boilerplate",
-  "bugs": {
-    "url": "https://github.com/michaelschwobe/gulp-nunjucks-boilerplate/issues"
-  },
-  "homepage": "https://github.com/michaelschwobe/gulp-nunjucks-boilerplate#readme",
-  "keywords": [
-    "autoprefixer",
-    "babel",
-    "boilerplate",
-    "browser-sync",
-    "clean-css",
-    "front-end",
-    "gulp",
-    "imagemin",
-    "minimal",
-    "nunjucks",
-    "sass",
-    "scalable",
-    "skeleton",
-    "webpack"
-  ],
+  "name": "belfingroup-html",
+  "version": "1.0.0",
+  "description": "Layout project belfingroup new design.",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
     "build": "NODE_ENV=production gulp",
+    "deploy": "yarn build && firebase deploy",
     "clean": "gulp clean"
   },
   "dependencies": {
     "flexboxgrid": "^6.3.1",
     "include-media": "^1.4.9",
     "jquery": "^3.5.1",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "scrollbooster": "^3.0.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
