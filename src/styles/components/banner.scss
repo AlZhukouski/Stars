@@ -13,6 +13,7 @@
 
 .banner__title {
   display: block;
+  max-width: 90%;
 }
 
 .banner__subtitle {
@@ -24,6 +25,16 @@
   line-height: 1.8;
   margin-top: 56px;
   margin-bottom: 126px;
+
+  @media (max-width: 1280px) {
+    margin-bottom: 76px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .banner__btn-wrap {
@@ -31,6 +42,10 @@
   width: 100%;
   max-width: 542px;
   justify-content: space-between;
+
+  @media (max-width: 1280px) {
+    flex-wrap: wrap;
+  }
 }
 
 .banner__btn {
@@ -45,6 +60,13 @@
   color: white;
   border-radius: 30px;
 
+  @media (max-width: 1280px) {
+    min-height: 52px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+  }
+
   &--log-in {
     font-size: 18px;
     font-weight: bold;
@@ -57,6 +79,43 @@
     img {
       margin-left: 12px;
       margin-top: 1px;
+    }
+
+    @media (max-width: 1280px) {
+      order: -1;
+      width: 100%;
+      margin-bottom: 40px;
+      max-width: unset;
+      border: unset;
+    }
+  }
+
+  &--registration {
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: unset;
+    color: white;
+    max-width: 256px;
+    width: 100%;
+    font-size: 18px;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../media/banner-btn-border.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    @media (max-width: 1280px) {
+      display: flex;
     }
   }
 }

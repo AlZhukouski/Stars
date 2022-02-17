@@ -4,6 +4,14 @@
     {% include 'partials/head.html' %}
   </head>
   <body class="page">
+  <div class="mob-menu">
+    <img src="static/media/mob-logo.svg" alt="" class="mob-menu__logo">
+    <div class="mob-menu__close-btn-wrap">
+      <div class="mob-menu__close-btn"></div>
+    </div>
+    {% include 'partials/nav.html' %}
+    <a href="/" class="header__mob-log-in">Вход</a>
+  </div>
     <main class="parallax">
       {% block content %}
       {% endblock %}

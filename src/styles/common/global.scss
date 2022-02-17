@@ -16,4 +16,8 @@ body {
   font-size: 16px;
   background: $bg-color url('../media/bg-pattern.png');
   color: white;
+
+  @media (max-width: 767px) {
+    background: #07091D;
+  }
 }

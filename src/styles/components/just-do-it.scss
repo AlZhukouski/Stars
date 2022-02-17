@@ -4,6 +4,10 @@
 .just-do-it {
   display: block;
   margin-bottom: 450px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 150px;
+  }
 }
 
 .just-do-it__title {
@@ -14,6 +18,10 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
+
+  @media (max-width: 767px) {
+    font-size: 30px;
+  }
 }
 
 .just-do-it__btn-wrap {
@@ -25,9 +33,19 @@
 
 .just-do-it__bg-img {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: calc(50% + 60px);
+  left: calc(50% + 40px);
   transform: translate(-50%, -50%);
+  background-image: url("../media/orbit.png");
+  background-repeat: no-repeat;
+  width: 2311px;
+  height: 924px;
+
+  @media (max-width: 767px) {
+    width: 1055px;
+    height: 507px;
+    background-image: url("../media/orbit-mob.png");
+  }
 }
 
 .just-do-it__btn {
@@ -45,6 +63,12 @@
   font-weight: bold;
   z-index: 1;
 
+  @media (max-width: 767px) {
+    width: 140px;
+    height: 140px;
+    font-size: 18px;
+  }
+
   &::before {
     content: "";
     border: 1px solid #AABDFF;
@@ -55,6 +79,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media (max-width: 767px) {
+      width: 160px;
+      height: 160px;
+    }
+
   }
 
   &::after {
@@ -74,4 +104,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (max-width: 767px) {
+    width: 350px;
+    height: 320px;
+  }
 }

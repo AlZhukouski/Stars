@@ -15,27 +15,33 @@
     "primary": [
       {
         "path": "/",
-        "children": "Преимущества"
+        "children": "Преимущества",
+        "id": "benefits"
       },
       {
         "path": "/",
-        "children": "О проекте"
+        "children": "О проекте",
+        "id": "aboutProject"
       },
       {
         "path": "/",
-        "children": "Отзывы"
+        "children": "Отзывы",
+        "id": "reviews"
       },
       {
         "path": "/",
-        "children": "Roadmap"
+        "children": "Roadmap",
+        "id": "roadmap"
       },
       {
         "path": "/",
-        "children": "Лицензия"
+        "children": "Лицензия",
+        "id": "license"
       },
       {
         "path": "/",
-        "children": "Контакты"
+        "children": "Контакты",
+        "id": "contacts"
       }
     ]
   }

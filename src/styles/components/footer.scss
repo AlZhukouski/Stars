@@ -6,7 +6,8 @@
   align-items: center;
   justify-content: center;
   margin-left: -25px;
-  margin-bottom: 52px;
+  padding-bottom: 35px;
+  flex-wrap: wrap;
 }
 
 .footer__link {
@@ -15,8 +16,18 @@
   font-size: 18px;
   color: white;
   transition: 0.3s;
+  margin-bottom: 17px;
 
   &:hover {
     color: $link-color;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 13px;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    text-align: center;
   }
 }

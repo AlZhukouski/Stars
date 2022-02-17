@@ -4,6 +4,10 @@
 .social {
   display: block;
   margin-bottom: 240px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 70px;
+  }
 }
 
 .social__title {
@@ -15,12 +19,26 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
+
+  @media (max-width: 767px) {
+    font-size: 30px;
+    text-transform: unset;
+    margin-bottom: 50px;
+  }
 }
 
 .social__flex {
   display: flex;
   justify-content: center;
   margin-left: -20px;
+
+  @media (max-width: 991px) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 650px) {
+    margin-left: unset;
+  }
 }
 
 .social__link {
@@ -29,12 +47,28 @@
   text-decoration: unset;
   color: white;
   max-width: 256px;
+
+  @media (max-width: 991px) {
+    width: calc(50% - 20px);
+    max-width: unset;
+    text-align: center;
+  }
+
+  @media (max-width: 650px) {
+    width: 100%;
+    margin-left: unset;
+  }
 }
 
 .social__icon-wrap {
   position: relative;
   width: 60px;
   height: 60px;
+
+  @media (max-width: 991px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .social__icon {
@@ -54,4 +88,11 @@
   color: rgba(255, 255, 255, 0.5);
   margin-top: unset;
   margin-bottom: 30px;
+
+  @media (max-width: 991px) {
+    max-width: 256px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+  }
 }
