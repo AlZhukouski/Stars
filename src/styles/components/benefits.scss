@@ -194,20 +194,16 @@
 }
 
 .benefits__statistic-count {
-  font-size: 70px;
+  @include text-gradient(radial-gradient(61.08% 217.83% at 44.64% -55.2%, #FFE600 0%, #CD69EA 48.88%, #1070FF 100%));
+
+  ont-size: 70px;
   font-weight: 700;
   line-height: 1;
   margin-top: unset;
   margin-bottom: 22px;
 
-  @media (min-width: 768px) {
-    @include text-gradient(radial-gradient(61.08% 217.83% at 44.64% -55.2%, #FFE600 0%, #CD69EA 48.88%, #1070FF 100%));
-  }
-
   @media (max-width: 767px) {
-    color: #916CF1;
     font-size: 52px;
-    font-weight: 600;
     margin-bottom: 10px;
   }
 }

@@ -70,15 +70,26 @@
   &--log-in {
     font-size: 18px;
     font-weight: bold;
-    background: radial-gradient(114.65% 620.83% at 100% 254.17%, #FFE600 0%, #CD69EA 36.55%, #1048FF 100%);
+    background-image: linear-gradient(95.13deg, #3E50FA -6.04%, #4551F9 18.51%, #BA66EC 39.13%, #BC66EC 59.22%, #4251FA 112.12%);
+    transition: all .3s ease-in-out;
+    background-size: 600px 100%;
+
+    &:hover {
+      background-position: 100% 0;
+    }
   }
 
   &--watch-video {
     border: 1px solid #6A707F;
+    transition: 0.25s ease-out;
 
     img {
       margin-left: 12px;
       margin-top: 1px;
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
     }
 
     @media (max-width: 1280px) {

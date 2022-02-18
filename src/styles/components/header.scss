@@ -29,6 +29,11 @@
   color: white;
   width: 170px;
   height: 48px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 1.1%, rgba(223, 223, 223, 0) 47.7%, rgba(112, 179, 245, 0.686) 69.24%, #B93EFF 86.6%);
+  background-size: 800px;
+  background-position-x: 0;
+  transition: 0.45s ease-out;
 
   &:before {
     content: "";
@@ -41,6 +46,15 @@
     background-image: url("../media/header-btn-border.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    transition: 0.8s;
+  }
+
+  &:hover {
+    background-position: 91%;
+
+    &:before {
+      opacity: 0;
+    }
   }
 }
 

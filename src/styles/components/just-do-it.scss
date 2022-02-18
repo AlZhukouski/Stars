@@ -29,6 +29,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 210px;
+  height: 210px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &::after {
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.61973) 25%, rgba(255, 255, 255, 0.385907) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    width: 2px;
+    height: 80px;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .just-do-it__bg-img {
@@ -54,48 +69,62 @@
   align-items: center;
   justify-content: center;
   background: radial-gradient(109.71% 127.93% at 10.92% -28.55%, #FFE600 0%, #CD69EA 45.7%, #1070FF 100%);
-  width: 210px;
-  height: 210px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   text-decoration: unset;
   color: white;
   font-size: 24px;
   font-weight: bold;
   z-index: 1;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    width: 210px;
+    height: 210px;
+
+    &:before {
+      opacity: 1;
+      width: 244px;
+      height: 244px;
+    }
+  }
 
   @media (max-width: 767px) {
     width: 140px;
     height: 140px;
     font-size: 18px;
+
+    &:hover {
+      width: 150px;
+      height: 150px;
+
+      &:before {
+        opacity: 1;
+        width: 165px;
+        height: 165px;
+      }
+    }
   }
 
   &::before {
     content: "";
     border: 1px solid #AABDFF;
     position: absolute;
-    width: 244px;
-    height: 244px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: 0.3s ease-in-out;
+    opacity: 0;
 
     @media (max-width: 767px) {
       width: 160px;
       height: 160px;
     }
 
-  }
-
-  &::after {
-    content: "";
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.61973) 25%, rgba(255, 255, 255, 0.385907) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
-    position: absolute;
-    width: 2px;
-    height: 80px;
-    top: -80px;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
 
