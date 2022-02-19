@@ -1,7 +1,24 @@
 {
   "site": {
-    "title": "(site title)",
-    "description": "(site meta description)"
+    "title": "STARS",
+    "description": "Образовательная платформа с интерактивной технологией обучения",
+    "social": {
+      "telegram": "https://t.me/+KHTmg9QQbahiZTVi",
+      "vk": "https://vk.com/public202035837",
+      "youtube": "https://www.youtube.com/channel/UCrmcF7JcICRxIYCMMnPyrrg",
+      "instagram": "https://instagram.com/stars_matrix"
+    },
+    "videoLink": "https://youtu.be/zASxLqsMlw4",
+    "checkRegistrationLink": "https://offshore.su/blog/company",
+    "contractOffer": {
+      "privacyPolicy": "documents/privacy-policy.pdf",
+      "contractOffer": "documents/contract-offer.pdf",
+      "termsOfUse": "documents/terms-of-use.pdf"
+    },
+    "redirects": {
+      "signUp": "https://lc.stars-community.net/sign-up",
+      "signIn": "https://lc.stars-community.net/sign-in"
+    }
   },
   "pages": {
     "index": {

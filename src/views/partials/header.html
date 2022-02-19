@@ -2,12 +2,12 @@
 
 <header class="header" role="banner">
   <div class="header__flex">
-    <img src="static/media/logo.svg" alt="" class="header__logo">
+    <img src="static/media/logo.svg" alt="Stars" class="header__logo">
 
     {% include 'partials/nav.html' %}
 
 
-    <a href="/" class="header__btn">Регистрация</a>
+    <a href="{{ site.redirects.signUp }}" target="_blank" class="header__btn">Регистрация</a>
     <div class="header__hamburger-wrap">
       <div class="header__hamburger"></div>
     </div>

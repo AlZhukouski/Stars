@@ -15,13 +15,15 @@
       {% include 'partials/header.html' %}
 
       <div class="banner">
-        <img class="banner__title" src="static/media/stars-title.svg" alt="">
+        <img class="banner__title" src="static/media/stars-title.svg" alt="Stars">
         <p class="banner__subtitle">Образовательная платформа с&nbsp;интерактивной технологией обучения</p>
         <div class="banner__btn-wrap">
-          <a href="/" class="banner__btn banner__btn--log-in">Вход</a>
-          <a href="/" class="banner__btn banner__btn--registration">Регистрация</a>
-          <a href="/" class="banner__btn banner__btn--watch-video">Смотреть видео <img
-            src="static/media/btn-youtube-icon.svg" alt="Youtube icon"></a>
+          <a href="{{ site.redirects.signIn }}" target="_blank" class="banner__btn banner__btn--log-in">Вход</a>
+          <a href="{{ site.redirects.signUp }}" target="_blank" class="banner__btn banner__btn--registration">Регистрация</a>
+          <a href="{{ site.videoLink }}" target="_blank" class="banner__btn banner__btn--watch-video">
+            Смотреть видео
+            <img src="static/media/btn-youtube-icon.svg" alt="STARS COMMUNITY">
+          </a>
         </div>
       </div>
     </div>
@@ -39,7 +41,7 @@
         <div class="benefits__flex">
           <div class="benefits__item">
             <div class="benefits__icon-wrap">
-              <img class="benefits__icon" src="static/media/benefits-1.png" alt="Icon">
+              <img class="benefits__icon" src="static/media/benefits-1.png" alt="Интерактивные технологии обучения">
             </div>
             <p class="benefits__item-title">Интерактивные технологии обучения</p>
             <p class="benefits__item-subtitle">В основе обучающего процесса лежит формирование навыка построение команд,
@@ -47,7 +49,7 @@
           </div>
           <div class="benefits__item">
             <div class="benefits__icon-wrap">
-              <img class="benefits__icon" src="static/media/benefits-2.png" alt="Icon">
+              <img class="benefits__icon" src="static/media/benefits-2.png" alt="Образование и развитие в STARS">
             </div>
             <p class="benefits__item-title">Образование и развитие в STARS</p>
             <p class="benefits__item-subtitle">Разработка и реализация образовательных программ для профессиональной
@@ -55,7 +57,7 @@
           </div>
           <div class="benefits__item">
             <div class="benefits__icon-wrap">
-              <img class="benefits__icon" src="static/media/benefits-3.png" alt="Icon">
+              <img class="benefits__icon" src="static/media/benefits-3.png" alt="Организация тематических онлайн-мероприятий">
             </div>
             <p class="benefits__item-title">Организация тематических онлайн-мероприятий</p>
             <p class="benefits__item-subtitle">Организация вебинаров, онлайн-конференций и иных мероприятий,
@@ -63,7 +65,7 @@
           </div>
           <div class="benefits__item">
             <div class="benefits__icon-wrap">
-              <img class="benefits__icon" src="static/media/benefits-4.png" alt="Icon">
+              <img class="benefits__icon" src="static/media/benefits-4.png" alt="Многоуровневая система обучения">
             </div>
             <p class="benefits__item-title">Многоуровневая система обучения</p>
             <p class="benefits__item-subtitle">Система обучения STARS актуальна как для новичка, так и для успешного
@@ -71,7 +73,7 @@
           </div>
           <div class="benefits__item">
             <div class="benefits__icon-wrap">
-              <img class="benefits__icon" src="static/media/benefits-5.png" alt="Icon">
+              <img class="benefits__icon" src="static/media/benefits-5.png" alt="Политика прозрачности STARS">
             </div>
             <p class="benefits__item-title">Политика прозрачности STARS</p>
             <p class="benefits__item-subtitle">Платформа STARS представлена во всех социальных сетях и регулярно
@@ -80,7 +82,7 @@
           </div>
           <div class="benefits__item">
             <div class="benefits__icon-wrap">
-              <img class="benefits__icon" src="static/media/benefits-6.png" alt="Icon">
+              <img class="benefits__icon" src="static/media/benefits-6.png" alt="Международный масштаб STARS">
             </div>
             <p class="benefits__item-title">Международный масштаб STARS</p>
             <p class="benefits__item-subtitle">Образовательная платформа STARS ориентирована на аудиторию различных
@@ -118,19 +120,19 @@
         <img src="static/media/why-bg.svg" alt="orbits" class="why-choose-us__bg-img">
         <div class="why-choose-us__logo-wrap">
           <p class="why-choose-us__logo-title">Почему выбирают</p>
-          <img src="static/media/why-choose-us-logo.svg" alt="" class="why-choose-us__logo">
+          <img src="static/media/why-choose-us-logo.svg" alt="Почему выбирают" class="why-choose-us__logo">
         </div>
 
 
         <div class="why-choose-us__item why-choose-us__item--1">
-          <img src="static/media/why-1.png" alt="" class="why-choose-us__item-icon">
+          <img src="static/media/why-1.png" alt="Надежность" class="why-choose-us__item-icon">
           <div class="why-choose-us__item-wrap">
             <p class="why-choose-us__item-title">Надежность</p>
             <p class="why-choose-us__item-text">Платформа STARS официально зарегистрирована в Великобритании</p>
           </div>
         </div>
         <div class="why-choose-us__item why-choose-us__item--2">
-          <img src="static/media/why-2.png" alt="" class="why-choose-us__item-icon">
+          <img src="static/media/why-2.png" alt="Актуальность" class="why-choose-us__item-icon">
           <div class="why-choose-us__item-wrap">
             <p class="why-choose-us__item-title">Актуальность</p>
             <p class="why-choose-us__item-text">Создатели платформы регулярно обновляют программы STARS в соответствии с
@@ -138,7 +140,7 @@
           </div>
         </div>
         <div class="why-choose-us__item why-choose-us__item--3">
-          <img src="static/media/why-3.png" alt="" class="why-choose-us__item-icon">
+          <img src="static/media/why-3.png" alt="Сообщество сетевых предпринимателей" class="why-choose-us__item-icon">
           <div class="why-choose-us__item-wrap">
             <p class="why-choose-us__item-title">Сообщество сетевых предпринимателей</p>
             <p class="why-choose-us__item-text">Первое независимое коммьюнити сетевых предпринимателей в России и на
@@ -146,14 +148,14 @@
           </div>
         </div>
         <div class="why-choose-us__item why-choose-us__item--4">
-          <img src="static/media/why-4.png" alt="" class="why-choose-us__item-icon">
+          <img src="static/media/why-4.png" alt="Доступность" class="why-choose-us__item-icon">
           <div class="why-choose-us__item-wrap">
             <p class="why-choose-us__item-title">Доступность</p>
             <p class="why-choose-us__item-text">Все учебные материалы доступны каждому пользователю платформы STARS</p>
           </div>
         </div>
         <div class="why-choose-us__item why-choose-us__item--5">
-          <img src="static/media/why-5.png" alt="" class="why-choose-us__item-icon">
+          <img src="static/media/why-5.png" alt="Экспертность" class="why-choose-us__item-icon">
           <div class="why-choose-us__item-wrap">
             <p class="why-choose-us__item-title">Экспертность</p>
             <p class="why-choose-us__item-text">Создатели платформы STARS являются успешными сетевыми предпринимателями
@@ -161,7 +163,7 @@
           </div>
         </div>
         <div class="why-choose-us__item why-choose-us__item--6">
-          <img src="static/media/why-6.png" alt="" class="why-choose-us__item-icon">
+          <img src="static/media/why-6.png" alt="Партнёрская программа" class="why-choose-us__item-icon">
           <div class="why-choose-us__item-wrap">
             <p class="why-choose-us__item-title">Партнёрская программа</p>
             <p class="why-choose-us__item-text">Наличие партнерской программы помогает пользователям развиваться
@@ -499,8 +501,8 @@
         <h2 class="just-do-it__title">Займи свое место среди звезд!</h2>
         <div class="just-do-it__btn-wrap">
           <div class="just-do-it__bg-img"></div>
-          <a href="/" class="just-do-it__btn">Регистрация</a>
-          <img src="static/media/btn-star.png" alt="" class="just-do-it__btn-img">
+          <a href="{{ site.redirects.signUp }}" target="_blank" class="just-do-it__btn">Регистрация</a>
+          <img src="static/media/btn-star.png" alt="Регистрация" class="just-do-it__btn-img">
         </div>
       </div>
     </div>
@@ -518,7 +520,7 @@
           <p class="info-block__text info-block__text--small">Сайт адаптирован под все современные операционные системы
             и доступен пользователям со всего мира.</p>
         </div>
-        <img src="static/media/app-screen.png" width="634" height="702" alt="Phone" class="info-block__img">
+        <img src="static/media/app-screen.png" width="634" height="702" alt="Пользуйтесь на любом устройстве" class="info-block__img">
       </div>
     </div>
   </div>
@@ -668,16 +670,16 @@
         <h2 class="certificates__title">Юридическая<br>информация</h2>
         <div class="certificates__flex">
           <div class="certificates__img-wrap">
-            <img src="static/media/cert-1.png" width="301" height="384" alt="Certificates"
+            <img src="static/media/cert-1.png" width="301" height="384" alt="Сертификат регистрации Limited Partnership STARS"
                  class="certificates__pic certificates__pic--1">
-            <img src="static/media/cert-2.png" width="301" height="384" alt="Certificates"
+            <img src="static/media/cert-2.png" width="301" height="384" alt="Сертификат регистрации Халяль"
                  class="certificates__pic certificates__pic--2">
           </div>
 
           <div class="certificates__wrap">
             <p class="certificates__text">Сертификат регистрации Limited Partnership STARS</p>
             <p class="certificates__text">Сертификат регистрации Халяль</p>
-            <a href="/" class="certificates__btn">Проверить регистрацию</a>
+            <a href="{{ site.checkRegistrationLink }}" target="_blank" class="certificates__btn">Проверить регистрацию</a>
           </div>
         </div>
       </div>
@@ -702,31 +704,31 @@
       <div class="social" id="contacts">
         <h2 class="social__title">Познакомьтесь с&nbsp;мировым сообществом</h2>
         <div class="social__flex">
-          <a href="/" class="social__link" target="_blank">
+          <a href="{{ site.social.telegram }}" class="social__link" target="_blank">
             <div class="social__icon-wrap ">
-              <img src="static/media/telegram.svg" alt="" class="social__icon social__icon--tg">
+              <img src="static/media/telegram.svg" alt="Telegram" class="social__icon social__icon--tg">
             </div>
             <p class="social__media-title">Telegram</p>
             <p class="social__text">Сеть телеграм-чатов и инфо-каналов STARS для информирования своих пользователей</p>
           </a>
-          <a href="/" class="social__link" target="_blank">
+          <a href="{{ site.social.vk }}" class="social__link" target="_blank">
             <div class="social__icon-wrap">
-              <img src="static/media/vk.svg" alt="" class="social__icon social__icon--vk">
+              <img src="static/media/vk.svg" alt="Вконтакте" class="social__icon social__icon--vk">
             </div>
             <p class="social__media-title">Вконтакте</p>
             <p class="social__text">Официальное сообщество STARS для&nbsp;сетевых предпринимателей в России и на
               территории СНГ</p>
           </a>
-          <a href="/" class="social__link" target="_blank">
+          <a href="{{ site.social.youtube }}" class="social__link" target="_blank">
             <div class="social__icon-wrap">
-              <img src="static/media/youtube.svg" alt="" class="social__icon social__icon--youtube">
+              <img src="static/media/youtube.svg" alt="Youtube" class="social__icon social__icon--youtube">
             </div>
             <p class="social__media-title">Youtube</p>
             <p class="social__text">Официальный YouTube-канал STARS с записями всех онлайн-мероприятий</p>
           </a>
-          <a href="/" class="social__link" target="_blank">
+          <a href="{{ site.social.instagram }}" class="social__link" target="_blank">
             <div class="social__icon-wrap">
-              <img src="static/media/inst.svg" alt="" class="social__icon social__icon--inst">
+              <img src="static/media/inst.svg" alt="Instagram" class="social__icon social__icon--inst">
             </div>
             <p class="social__media-title">Instagram</p>
             <p class="social__text">Новостной аккаунт STARS, на котором публикуются самые свежие новости платформы</p>
@@ -734,9 +736,15 @@
         </div>
       </div>
       <footer class="footer">
-        <a href="/" class="footer__link">Политика конфиденциальности</a>
-        <a href="/" class="footer__link">Договор оферты</a>
-        <a href="/" class="footer__link">Пользовательское соглашение</a>
+        <a href="{{ site.contractOffer.privacyPolicy }}" download="Политика конфиденциальности" class="footer__link">
+          Политика конфиденциальности
+        </a>
+        <a href="{{ site.contractOffer.contractOffer }}" download="Договор оферты" class="footer__link">
+          Договор оферты
+        </a>
+        <a href="{{ site.contractOffer.termsOfUse }}" download="Пользовательское соглашение" class="footer__link">
+          Пользовательское соглашение
+        </a>
       </footer>
     </div>
   </div>
