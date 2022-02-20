@@ -8,6 +8,7 @@
   <title>{{ page.title if page.title else site.title }}</title>
   <meta name="description" content="{{ page.description if page.description else site.description }}" />
 
+  <link rel="icon" href="./favicon.png" />
   {%- for stylesheet in page.stylesheets %}
     <link rel="stylesheet" href="{{ paths.root + paths.styles }}/{{ stylesheet }}.css?ver={{ version }}" />
   {% endfor -%}
