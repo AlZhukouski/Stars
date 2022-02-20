@@ -42,11 +42,6 @@
       },
       {
         "path": "/",
-        "children": "Отзывы",
-        "id": "reviews"
-      },
-      {
-        "path": "/",
         "children": "Roadmap",
         "id": "roadmap"
       },
